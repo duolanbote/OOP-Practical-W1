@@ -1,4 +1,4 @@
-int sum_function(int array[], int n)
+int array_sum(int array[], int n)
     {
         
         if (n < 0)
