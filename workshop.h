@@ -6,9 +6,12 @@ void changeValue(double* p) {
 
 void printArray(double* p, int n) {
     for (int i = 0; i < n; ++i) {
-        std::cout << p[i] << "\n";
+        if (i > 0) std::cout << " ";   
+        std::cout << p[i];
     }
+    std::cout << std::endl;               
 }
+
 
 double arrayMax(double* p, int n) {
     double MAX = p[0];
