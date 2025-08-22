@@ -1,18 +1,10 @@
-#include <iostream>
+#include "Person.h"
 
-int* readNumbers(); //assign arr and receive number which input by user
-void printNumbers(int* numbers, int length);// output number and arr
-
-int* readNumbers() {
-    static int arr[10];
-    for (int i = 0; i < 10; i++) {
-        std::cin >> arr[i];//cin: user input numebr, and assign arr to each number
+Person* createPersonArray(int n) {
+    Person* arr = new Person[n];
+    for (int i = 0; i < n; i++) {
+        arr[i].name = "John Doe";
+        arr[i].age = 0;
     }
     return arr;
-}
-
-void printNumbers(int* numbers, int length) {
-    for (int i = 0; i < length; i++) {
-        std::cout << i << " " << numbers[i] << std::endl;
-    }
 }

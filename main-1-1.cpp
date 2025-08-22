@@ -1,12 +1,16 @@
 #include <iostream>
+#include "Person.h"
 
-int* readNumbers();
-void printNumbers(int* numbers, int length);
+Person* createPersonArray(int n);
 
 int main() {
-    int* numbers = readNumbers();
+    int n = 3;
+    Person* people = createPersonArray(n);
 
-    printNumbers(numbers, 10);
-    
+    for (int i = 0; i < n; i++) {
+        std::cout << i << ": " << people[i].name << ", " << people[i].age << std::endl;
+    }
+
+    delete[] people;
     return 0;
 }
