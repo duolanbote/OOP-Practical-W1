@@ -19,3 +19,4 @@ void Wizard::castSpell(Player* opponent) {
               << opponent->getName() << " for " << dmg << " damage." << std::endl;
     opponent->takeDamage(dmg);
 }
+   

@@ -25,4 +25,4 @@ void Warrior::swingWeapon(Player* opponent) {
               << " for " << weaponDamage_ << " damage!" << std::endl;
     opponent->takeDamage(weaponDamage_);
 }
-
+   
